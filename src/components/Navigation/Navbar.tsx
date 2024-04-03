@@ -1,4 +1,9 @@
+'use client'
+import useListCard from "@/hooks/useListCard"
+
 const NavbarKitaBisa = () => {
+    const cards = useListCard()
+
     return (
 
         <div className="flex w-full justify-between sticky top-0 bg-white p-4">
@@ -7,7 +12,7 @@ const NavbarKitaBisa = () => {
                 <h2 className="font-bold">Kitabisa</h2>
             </div>
 
-            <button className="text-sm bg-slate-300 px-3 rounded-lg">Urutkan Donasi</button>
+            <button className="text-sm bg-slate-300 px-3 rounded-lg" onClick={cards.sortCampaign}>Urutkan Donasi</button>
         </div>
     )
 }
