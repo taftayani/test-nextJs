@@ -4,33 +4,57 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
+If You Are on the first cloning, please to 'npm install' and then 'npm run dev'
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Structered Folder
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## app
+---------------
+app folder is implemented for setup app route. Inside the app, you could add folder and naming as routing of website
 
-## Learn More
+example :
+> Detail
+    > page.tsx
+    page.tsx is purposing for direct page route
+    > layout.tsx
+     layout.tsx is purposing for the layout of the page
 
-To learn more about Next.js, take a look at the following resources:
+------------------------------------------------------------------------------------------
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## assets
+--------------
+assets is purposing to put a style and image when it needed.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+-------------------------------------------------------------------------------------------
 
-## Deploy on Vercel
+## components
+--------------
+components file is making to setup the component of the website. inside the component we have :
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Element
+element targeting to setup element html component, such as Card, Button, or even label
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Navigation 
+navigation targeting to setup the navigation component, such as navbar or footer for example
+
+### Pages
+pages component is to setup the component of the page, such as the sections its self or even the modules of component
+
+------------------------------------------------------------------------------------------
+
+## hooks
+hooks is implementing to setup the hooks of state. When you to manipulate data, or state you could make a useHook of that component state
+
+for example 
+
+> useHookAuth
+> useHookCards
+
+------------------------------------------------------------------------------------------
+ ## __test__
+test folder is to setup unit test for the component, or even page. You could put in the based on what folder are want to test. 
+
+
+
+

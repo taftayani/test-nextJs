@@ -1,7 +1,7 @@
 import NavbarKitaBisa from "@/components/Navigation/Navbar";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "../assets/globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
