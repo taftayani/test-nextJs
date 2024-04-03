@@ -10,7 +10,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 # Structered Folder
 
 ## app
----------------
 app folder is implemented for setup app route. Inside the app, you could add folder and naming as routing of website
 
 example :
@@ -23,13 +22,16 @@ example :
 ------------------------------------------------------------------------------------------
 
 ## assets
---------------
 assets is purposing to put a style and image when it needed.
 
 -------------------------------------------------------------------------------------------
 
+## config
+config folder is to put the configuration such as regExp, currency, timeformat. 
+
+-------------------------------------------------------------------------------------------
+
 ## components
---------------
 components file is making to setup the component of the website. inside the component we have :
 
 ### Element

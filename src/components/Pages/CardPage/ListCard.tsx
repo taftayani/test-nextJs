@@ -1,4 +1,5 @@
 import CardKitaBisa from "@/components/Element/Card"
+import { formattedCurrency } from "@/config/currency"
 import React from "react"
 import { IPropListCard } from "./ListCardInterface"
 
@@ -17,7 +18,7 @@ const ListCard: React.FC<IPropListCard> = ({ Item }) => {
                             <div className="flex justify-between px-3">
                                 <div className="grid">
                                     <label className="font-semibold">{list.title}</label>
-                                    <label className="font-medium text-sm">Rp. {list.price}</label>
+                                    <label className="font-medium text-sm">Rp. {formattedCurrency(list.price)}</label>
                                 </div>
                                 <div className="grid">
                                     <label className="font-semibold">Sisa Hari</label>
